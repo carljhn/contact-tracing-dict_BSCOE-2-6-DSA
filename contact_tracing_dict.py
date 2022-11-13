@@ -57,4 +57,16 @@ while True:
 
     #dictionary
     contact = {}
-    
+
+    #diplay first option (add an item/s)
+    if option == 1:
+
+        print("You chose item 1, please state the required information.") 
+        name = input("Enter your full name: ")
+        age = int(input("Enter your age: "))
+        address = input("Enter your address: ")
+        contact_num = int(input("Enter your contact number: "))
+        gender = input("State your gender. Put N/A if you prefer not to say: ")
+        course = input("State your course in college: ")
+        student_num = input("Enter your student number. Put N/A if not applicable: ")
+        print("Your data have been saved!")
