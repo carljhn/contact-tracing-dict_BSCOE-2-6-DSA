@@ -82,4 +82,9 @@ while True:
         contact["Gender"] = gender
         contact["Course"] = course
         contact["Student Number"] = student_num
+
+        #user input for the retrieval of record
+        full_name = input("Enter your name full name (Note: this is a case sensitive program): ")
+        print("Search result for: ", full_name)
+        print()
         
