@@ -39,14 +39,22 @@
 # Phone number: 1234567890 What do you want to do? (1-3): 3
 # Exit? n
 
-#display menu
-print("*************** This is a Contact Tracing ****************")
-print()
-print("Press 1 -> Add an item/s")
-print("Press 2 -> Search existing item/s")
-print("Press 3 -> Exit the program")
-print()
-print("*"*58)
+#while loop
 
-#user input
-option = int(input("What do you want to do? (1-3): "))
+while True: 
+
+    #display menu
+    print("*************** This is a Contact Tracing ****************")
+    print()
+    print("Press 1 -> Add an item/s")
+    print("Press 2 -> Search existing item/s")
+    print("Press 3 -> Exit the program")
+    print()
+    print("*"*58)
+
+    #user input
+    option = int(input("What do you want to do? (1-3): "))
+
+    #dictionary
+    contact = {}
+    
