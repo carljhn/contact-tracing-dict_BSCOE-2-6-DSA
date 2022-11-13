@@ -97,3 +97,9 @@ while True:
             print("The data is not existing in the existing, check the entered input if correct")
             print()
         
+    #display the third option (exit the program)
+    elif option == 3:
+        repeat = input("Do want to end this program? (y or n): ")
+        if repeat == "y":
+            print("Thank you for using this program!")
+            break
