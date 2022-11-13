@@ -87,4 +87,13 @@ while True:
         full_name = input("Enter your name full name (Note: this is a case sensitive program): ")
         print("Search result for: ", full_name)
         print()
+
+        #nested if-else statement to compare if the entered data is exisiting 
+        if full_name in name:
+            for key in contact:
+                print(key, ":", contact[key])
+                print()
+        else: 
+            print("The data is not existing in the existing, check the entered input if correct")
+            print()
         
