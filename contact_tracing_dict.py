@@ -70,3 +70,16 @@ while True:
         course = input("State your course in college: ")
         student_num = input("Enter your student number. Put N/A if not applicable: ")
         print("Your data have been saved!")
+
+    #display second option (search existing item/s)
+    elif option == 2:
+
+        #assigning keys and their corresponding values in the dictionary
+        contact["Full Name"] = name
+        contact["Age"] = age
+        contact["Address"] = address
+        contact["Contact Number"] = contact_num
+        contact["Gender"] = gender
+        contact["Course"] = course
+        contact["Student Number"] = student_num
+        
