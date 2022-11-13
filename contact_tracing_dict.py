@@ -99,7 +99,13 @@ while True:
         
     #display the third option (exit the program)
     elif option == 3:
-        repeat = input("Do want to end this program? (y or n): ")
+        repeat = input("Do you want to end this program? (y or n): ")
         if repeat == "y":
+            print()
             print("Thank you for using this program!")
             break
+    
+    #else statement for input beyond the numebr the number of options
+    else: 
+        print("Oops! Invalid Parameter")
+        print()
