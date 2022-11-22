@@ -40,7 +40,7 @@
 # Exit? n
 
 #while loop
-
+personal_data = {}
 while True: 
 
     #display menu
@@ -70,10 +70,6 @@ while True:
         course = input("State your course in college: ")
         student_num = input("Enter your student number. Put N/A if not applicable: ")
         print("Your data have been saved!")
-
-    #display second option (search existing item/s)
-    elif option == 2:
-
         #assigning keys and their corresponding values in the dictionary
         contact["Full Name"] = name
         contact["Age"] = age
@@ -83,16 +79,20 @@ while True:
         contact["Course"] = course
         contact["Student Number"] = student_num
 
+        personal_data[name] = contact
+
+    #display second option (search existing item/s)
+    elif option == 2:
+
         #user input for the retrieval of record
         full_name = input("Enter your name full name (Note: this is a case sensitive program): ")
         print("Search result for: ", full_name)
         print()
 
         #nested if-else statement to compare if the entered data is exisiting 
-        if full_name in name:
-            for key in contact:
-                print(key, ":", contact[key])
-                print()
+        if full_name in personal_data:
+            print(personal_data[full_name])
+            print()
         else: 
             print("The data is not existing in the existing, check the entered input if correct")
             print()
